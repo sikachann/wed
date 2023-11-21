@@ -1,0 +1,210 @@
+body{
+    margin: 0px;
+    background-color: #f5f5f5;
+}
+
+
+/* header */
+.top{
+    display: flex;
+    justify-content: space-between;   
+}
+.home{
+    display: flex;
+}
+.top_home{
+    margin: 5px 40px;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 10px;
+
+}
+.top_overview{
+    margin: 20px 10px;
+}
+
+.form{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 15px 20px;
+}
+
+/* mainimg */
+.mainimg img{
+    width: 100%;
+}
+
+/* news */
+.news{
+    width: 1000px;
+    margin: auto;
+}
+.news_top{
+    margin-left: 40px;
+}
+.news_main{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 10px;
+    margin: 70px 0 0;
+}
+.news_sub{
+    margin: 0 0 10px 0;
+
+}
+.news_b{
+    border-bottom: solid #000000 2px;/*borderの指定*/
+    padding-bottom: 20px;/*余白の指定*/
+    width: 50px;
+
+}
+.news_content{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.news_topics{
+    padding: 40px;
+    border-right: #000000 1px solid;
+}
+
+.time{
+    display: flex;
+}
+.time p{
+    margin: 0 0 0 10px;
+    font-size: 14px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1px 3px;
+}
+.title{
+    font-size: 15px;
+}
+
+/* about */
+.about_content{
+    display: flex;
+}
+.about_img img{
+    height: 400px;
+    width: 850px;
+    margin-top: 100px;
+}
+.about_txt{
+    margin: 200px 0  0 20px;
+}
+.about_main{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 10px;
+    margin: 70px 0 0;
+}
+.about_sub{
+    margin: 0 0 10px 0;
+}
+.about_b{
+    border-bottom: solid #000000 2px;/*borderの指定*/
+    padding-bottom: 40px;/*余白の指定*/
+    width: 45px;
+}
+
+/* bussines */
+.bussines{
+    width: 1000px;
+    margin: auto;
+}
+.bussines_main{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 10px;
+    margin: 70px 0 0;
+}
+
+.bussines_sub{
+    margin: 0 0 10px 0;
+
+}
+.bussines_b{
+    border-bottom: solid #000000 2px;/*borderの指定*/
+    padding-bottom: 40px;/*余白の指定*/
+    width: 45px;
+}
+.bussines_img{
+    display: flex;
+    justify-content: center;
+}
+.bussines_img img{
+    width: 400px ;
+}
+.bussines_1{
+    margin: 120px 40px 0 0;
+}
+.bussines_2{
+    margin: 40px 40px 0 0;
+}
+.bussines_3{
+    margin: 0 0 0 40px;
+}
+.bussines_4{
+    margin: 40px 0 0 40px;
+}
+
+/* company */
+.company{
+    display: flex;
+    width: 1000px;
+    margin: 50px auto 100px;
+}
+.company_content{
+    background-color: #ffffff;
+    padding: 100px;
+    margin-top: 50px;
+}
+.company_main{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 10px;
+    margin: 70px 0 0;
+}
+.comapny_sub{
+    margin: 0 0 10px 0;
+}
+.company_b{    
+    border-bottom: solid #000000 2px;/*borderの指定*/
+    padding-bottom: 40px;/*余白の指定*/
+    width: 45px;
+}
+.company_img img{
+    width: 410px;
+    height: 400px;
+    margin: 200px 0 0 -20px;
+}
+.company_p{
+    display: flex;
+}
+
+.inf_p{
+    margin-right: 30px;
+}
+
+/* footer */
+.footer_content{
+    background-color: #ffffff;
+
+}
+.fm{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: auto;
+}
+.fm_top{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 70px 0 0;
+}
+.fm_rignt{
+    margin-top: 40px;
+}
