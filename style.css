@@ -2,31 +2,71 @@ body{
     margin: 0px;
     background-color: #f5f5f5;
 }
+li{
+    list-style: none;
+}
 
 
 /* header */
-.top{
+
+.top_header{
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;
 }
-.home{
+.header_left{
     display: flex;
 }
 .top_home{
-    margin: 5px 40px;
+    margin: 10px 10px 5px 40px;
     font-size: 40px;
     font-weight: 500;
     letter-spacing: 10px;
-
+}
+.top_p{
+    margin-top: 30px;
 }
 .top_overview{
-    margin: 20px 10px;
+    margin: 30px 10px;
 }
 
 .form{
     background-color: #000000;
-    color: #ffffff;
     padding: 15px 20px;
+}
+.form a{
+    text-decoration: none;
+    color: #ffffff;
+}
+@media (min-width:901px) {
+    .top{
+        display: flex;
+        justify-content: space-between; 
+        margin: 0;
+    }
+    
+}
+@media(max-width:900px){
+    .top_header{
+        flex-direction: column;
+    }
+    .header_left{
+        flex-direction: column;
+    }
+    .top_home{
+        margin: 15px 0 5px 40px ;
+        font-size: 60px;
+    }
+    .top{
+        display: flex;
+        justify-content: space-between; 
+        margin: 0px;
+    }
+    .form{
+        display: none;
+    }
+    .top_overview{
+        margin: 25px;
+    }
 }
 
 /* mainimg */
@@ -50,23 +90,27 @@ body{
 }
 .news_sub{
     margin: 0 0 10px 0;
-
 }
 .news_b{
     border-bottom: solid #000000 2px;/*borderの指定*/
     padding-bottom: 20px;/*余白の指定*/
     width: 50px;
-
 }
 .news_content{
     display: flex;
     justify-content: center;
     margin: auto;
+    font-size: 20px;
 }
 .news_topics{
     padding: 40px;
     border-right: #000000 1px solid;
 }
+
+.news_topic{
+    padding: 40px;
+}
+
 
 .time{
     display: flex;
@@ -81,14 +125,27 @@ body{
 .title{
     font-size: 15px;
 }
+@media(max-width:900px){
+    .news{
+        width: 100%;
+    }
+    .news_content{
+        flex-direction: column;
+    }
+    .news_topics{
+        padding: 30px;
+
+    }
+}
 
 /* about */
 .about_content{
+    width: 100%;
     display: flex;
 }
 .about_img img{
     height: 400px;
-    width: 850px;
+    width: 100%;
     margin-top: 100px;
 }
 .about_txt{
@@ -108,7 +165,21 @@ body{
     padding-bottom: 40px;/*余白の指定*/
     width: 45px;
 }
+.about_txt{
+    margin: 200px 50px ;
+}
 
+@media(max-width:900px){
+    .about_content{
+        flex-direction: column;
+    }    
+    .about_img img{
+        width: 100%;
+    }
+    .about_txt{
+        margin: 0 auto;
+    }
+}
 /* bussines */
 .bussines{
     width: 1000px;
@@ -149,17 +220,54 @@ body{
 .bussines_4{
     margin: 40px 0 0 40px;
 }
+@media (max-width:900px){
+    .bussines{
+        display: block;
+        margin: auto;
+        width: 86%; 
+        }
+
+    .bussines_img{
+        flex-direction: column;
+        }
+        .bussines_1{
+            margin: auto;
+        }
+        .bussines_1 img{
+            width: 100%;
+        }
+        .bussines_2{
+            margin: auto;
+        }
+        .bussines_2 img{
+            width: 100%;
+        }
+        .bussines_3{
+            margin: auto;
+        }
+        .bussines_3 img{
+            width: 100%;
+        }
+        .bussines_4{
+            margin: auto;
+        }
+        .bussines_4 img{
+            width: 100%;
+        }
+    }
+
 
 /* company */
 .company{
-    display: flex;
     width: 1000px;
-    margin: 50px auto 100px;
+    margin: 50px auto ;
+    position: relative;
 }
 .company_content{
     background-color: #ffffff;
-    padding: 100px;
+    padding: 40px;
     margin-top: 50px;
+    width: 60%;
 }
 .company_main{
     font-size: 40px;
@@ -175,10 +283,14 @@ body{
     padding-bottom: 40px;/*余白の指定*/
     width: 45px;
 }
+.company_img{
+    position: absolute;
+    top: 50%;
+    right: 7%;
+}
 .company_img img{
     width: 410px;
-    height: 400px;
-    margin: 200px 0 0 -20px;
+    height: auto;   
 }
 .company_p{
     display: flex;
@@ -187,24 +299,71 @@ body{
 .inf_p{
     margin-right: 30px;
 }
+@media (max-width:900px){
+    .company{
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+    .company_p{
+        flex-direction: column;
+    }
+    .company_content{
+        margin:  auto;
+        width: 84%;
+        padding: 10px;
+    }
+    .company_img img{
+        width: 87%;
+        margin: 7%;
+    }
+
+    .company_inf_a{
+        margin: 0 20px;
+    }
+    .company_img{
+        position:static
+    }
+}
 
 /* footer */
-.footer_content{
+.footer{
     background-color: #ffffff;
-
+    padding-bottom: 20px;
 }
-.fm{
-    display: flex;
-    justify-content: space-between;
-    width: 1000px;
+.footer_content{
+    padding: 20px ;
+    width: 70%;
     margin: auto;
 }
-.fm_top{
-    font-size: 30px;
+.fm{
+
+    display: flex;
+    justify-content: space-between;
+}
+.fm_left{
+    font-size: 40px;
     font-weight: 500;
     letter-spacing: 2px;
-    margin: 70px 0 0;
 }
 .fm_rignt{
-    margin-top: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+
+}
+@media(max-width:900px){
+    .footer_content{
+        width: 90%;
+    }
+    .fm{
+        flex-direction: column;
+        width:100%;
+    }
+    .fm_left p{
+        margin: 0px;
+    }
+    .fm_under_p{
+        margin-top: 20px;
+    }
 }
